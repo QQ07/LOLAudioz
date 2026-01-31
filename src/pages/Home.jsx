@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom"; // Import useNavigate
 import { db } from "../services/firebase";
 import { collection, getDocs, query, orderBy } from "firebase/firestore";
 import AudioPlayer from "../components/AudioPlayer";
+import ShareButton from "../components/ShareButton";
 import "./Home.css";
 
 export default function Home() {
@@ -58,6 +59,9 @@ export default function Home() {
                 </div>
                 <div className="player-wrapper">
                   <AudioPlayer src={audio.audioUrl} />
+                </div>
+                <div className="card-footer">
+                  <ShareButton title={audio.title} audioUrl={audio.audioUrl} />
                 </div>
               </div>
             );

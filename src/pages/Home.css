@@ -94,6 +94,26 @@
   animation: fadeIn 0.4s ease-out 0.1s both;
 }
 
+.card-footer {
+  margin-top: 1.5rem;
+  text-align: right;
+}
+
+.share-button {
+  background: transparent;
+  border: 1px solid #e0e0e0;
+  color: #e0e0e0;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.share-button:hover {
+  background: #e0e0e0;
+  color: #1e1e2f;
+}
+
 .upload-button {
   background: linear-gradient(135deg, #4a4a5e 0%, #5a5a6f 100%);
   color: #ffffff;
